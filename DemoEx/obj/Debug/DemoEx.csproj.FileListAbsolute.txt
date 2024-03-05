@@ -1,0 +1,17 @@
+C:\Users\kbk.local\Desktop\test\DemoEx\bin\Debug\DemoEx.exe.config
+C:\Users\kbk.local\Desktop\test\DemoEx\bin\Debug\DemoEx.exe
+C:\Users\kbk.local\Desktop\test\DemoEx\bin\Debug\DemoEx.pdb
+C:\Users\kbk.local\Desktop\test\DemoEx\bin\Debug\EntityFramework.dll
+C:\Users\kbk.local\Desktop\test\DemoEx\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kbk.local\Desktop\test\DemoEx\bin\Debug\EntityFramework.xml
+C:\Users\kbk.local\Desktop\test\DemoEx\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kbk.local\Desktop\test\DemoEx\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.csproj.AssemblyReference.cache
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.Properties.Resources.resources
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.csproj.GenerateResource.cache
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.csproj.CoreCompileInputs.cache
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.csproj.CopyComplete
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.exe
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.pdb
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.Form1.resources
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.UserAgent.resources

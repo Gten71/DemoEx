@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoEx", "DemoEx.csproj", "{0A7F4B3D-0501-432C-8C25-B5B8742FEB49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USqlCSharpUdoUnitTestProject1", "USqlCSharpUdoUnitTestProject1\USqlCSharpUdoUnitTestProject1.csproj", "{B1E61B2F-A7C4-405C-993F-12444B4F2358}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A7F4B3D-0501-432C-8C25-B5B8742FEB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7F4B3D-0501-432C-8C25-B5B8742FEB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7F4B3D-0501-432C-8C25-B5B8742FEB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7F4B3D-0501-432C-8C25-B5B8742FEB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E61B2F-A7C4-405C-993F-12444B4F2358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E61B2F-A7C4-405C-993F-12444B4F2358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E61B2F-A7C4-405C-993F-12444B4F2358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E61B2F-A7C4-405C-993F-12444B4F2358}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BA7506F-A30F-4C8E-B98B-B6357ADA6672}
+	EndGlobalSection
+EndGlobal
