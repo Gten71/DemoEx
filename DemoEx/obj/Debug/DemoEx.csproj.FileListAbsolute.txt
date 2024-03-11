@@ -15,3 +15,5 @@ C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.exe
 C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.pdb
 C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.Form1.resources
 C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.UserAgent.resources
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.Form2.resources
+C:\Users\kbk.local\Desktop\test\DemoEx\obj\Debug\DemoEx.Form3.resources
