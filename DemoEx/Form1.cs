@@ -33,8 +33,8 @@ namespace DemoEx
             button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(0, 255, 255, 255); 
             button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent; 
             button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent; 
-            button.BackColor = System.Drawing.Color.LightGray; 
-
+            button.BackColor = System.Drawing.Color.LightGray;
+            button.BackColor = ColorTranslator.FromHtml("#FFE9F9");
             int cornerRadius = 10;
             System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
             path.AddArc(0, 0, cornerRadius * 2, cornerRadius * 2, 180, 90);
@@ -64,30 +64,50 @@ namespace DemoEx
                                 Picture = agent.Logo
                             };
 
+                var groupedUsers = users.GroupBy(u => new
+                {
+                    u.Name,
+                    u.AgentEmail,
+                    u.Count,
+                    u.Number,
+                    u.TypeAgent,
+                    u.Agent,
+                    u.AgentPriority,
+                    u.Picture
+                })
+                .Select(g => g.FirstOrDefault());
 
-                var list = users.ToList();
+                var list = groupedUsers.ToList();
                 for (int i = current; i < Math.Min(current + 10, list.Count); i++)
                 {
-                    int disc = 0;
-                    if (list[i].Count < 10000) disc = 0;
-                    else if (list[i].Count > 10000 && list[i].Count < 50000) disc = 5;
-                    else if (list[i].Count > 50000 && list[i].Count < 150000) disc = 10;
-                    else if (list[i].Count > 150000 && list[i].Count < 500000) disc = 20;
-                    else disc = 25;
-
-                    UserAgent userAgent = new UserAgent()
-                    {
-                        Label1 = list[i].TypeAgent + "|" + list[i].Agent,
-                        Label2 = list[i].Count + " продаж за год",
-                        Label3 = list[i].Number,
-                        Label4 = list[i].AgentPriority.ToString(),
-                        Label5 = disc.ToString() + "%"
-
-                    };
-                    userAgent.AddPicture(list[i].Picture);
+                    int disc = CalculateDiscount(list[i].Count);
+                    UserAgent userAgent = CreateUserAgent(list[i], disc);
                     flowLayoutPanel1.Controls.Add(userAgent);
                 }
             }
+        }
+
+        private int CalculateDiscount ( int count )
+        {
+            if (count < 10000) return 0;
+            else if (count < 50000) return 5;
+            else if (count < 150000) return 10;
+            else if (count < 500000) return 20;
+            else return 25;
+        }
+
+        private UserAgent CreateUserAgent ( dynamic userData, int discount )
+        {
+            UserAgent userAgent = new UserAgent()
+            {
+                Label1 = userData.TypeAgent + "|" + userData.Agent,
+                Label2 = userData.AgentEmail,
+                Label3 = userData.Number,
+                Label4 = userData.AgentPriority.ToString(),
+                Label5 = discount.ToString() + "%"
+            };
+            userAgent.AddPicture(userData.Picture);
+            return userAgent;
         }
 
         public void Form1_Load ( object sender, EventArgs e )
@@ -156,6 +176,11 @@ namespace DemoEx
                 }
                 LoadData();
             }
+        }
+
+        private void panel2_Paint ( object sender, PaintEventArgs e )
+        {
+
         }
     }
 }

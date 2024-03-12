@@ -31,7 +31,7 @@ namespace DemoEx
             button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             button.BackColor = System.Drawing.Color.LightGray;
-
+            button.BackColor = ColorTranslator.FromHtml("#FFE9F9");
             int cornerRadius = 10;
             System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
             path.AddArc(0, 0, cornerRadius * 2, cornerRadius * 2, 180, 90);
